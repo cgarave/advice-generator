@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="flex flex-col justify-center items-center
+            bg-[#1f2632] h-screen">
+
+  <div class="relative flex flex-col items-center justify-evenly
+              h-80 w-[30rem] p-5 bg-[#323a49] rounded-2xl shadow-xl drop-shadow-2xl
+              text-center">
+    <h3 id="adviceID" class="text-xs text-[#52ffa8] font-semibold tracking-[5px]"></h3>
+    <h1 id="text-container" class="text-2xl font-semibold text-white"></h1>
+    <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" width="2"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="4" height="16" rx="3"/><rect x="14" width="4" height="16" rx="3"/></g></g></svg>
+    <button id="randomize" class="absolute bottom-[-25px] p-4 rounded-full bg-[#52ffa8] hover:shadow-[0_0_60px_5px_rgba(82,255,168,0.5)]"><svg id="dice" class="" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg></button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
